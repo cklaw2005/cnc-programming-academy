@@ -1,0 +1,8 @@
+# Local render intermediates and preview captures
+videos/standalone/_render/
+videos/standalone/preview.jpg
+
+# Operating-system metadata
+Thumbs.db
+desktop.ini
+.DS_Store

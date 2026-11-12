@@ -1,0 +1,37 @@
+﻿CNC Programming Essentials — narration transcript
+
+Educational training only. Follow the actual machine manual, setup documentation, and approved shop procedures.
+
+CNC PROGRAMMING ESSENTIALS
+A CNC program is a set of instructions interpreted by a machine control. This short lesson connects coordinates, motion commands, machining, and inspection. Examples are educational only.
+
+01  ·  COORDINATES & DATUMS
+Every programmed position depends on an axis convention and a datum. Machine zero is established by the machine; a work offset such as G54 relates program coordinates to the setup part.
+
+02  ·  G90 & G91
+G90 reads coordinates as positions from the active origin. G91 reads them as movements from the current position. Confirm the active mode before every move; a mistaken modal assumption can send the tool somewhere unexpected.
+
+03  ·  G00 RAPID
+G00 requests rapid positioning. The control moves axes at machine-defined rapid rates; the exact path may vary by control. Rapid is not a cutting feed. Keep the route clear of stock, clamps, and fixtures.
+
+04  ·  G01 LINEAR FEED
+G01 commands linear interpolation at the programmed feed. The control coordinates the axes so the tool follows a straight path. A missing or stale feed, wrong units, or wrong feed mode can damage a tool or part.
+
+05  ·  G02 & G03 ARCS
+G02 and G03 request clockwise or counterclockwise circular motion in the active plane. Endpoints and arc-center or radius data follow the selected controller convention. Verify the plane, center, and direction in a backplot.
+
+06  ·  M-CODES
+M-codes request machine actions such as spindle rotation, stop, coolant, and program end. Their exact behavior can depend on the machine builder. Confirm direction, speed limits, coolant function, and safe restart procedure.
+
+07  ·  TURNING & MILLING
+On a lathe the workpiece usually rotates as the tool feeds along its profile. On a mill the cutter rotates while the workpiece is held. Facing, turning, boring, slots, and pockets each need suitable tooling and clearance.
+
+08  ·  AUTOMOTIVE QUALITY
+In automotive production, tool wear can shift a shaft or bearing-seat diameter over time. Track measurements in sequence, verify the measurement system, and follow the control plan. Cpk is meaningful only when the process is stable and the data are suitable.
+
+09  ·  SAFE PROVE-OUT
+Before real machining, verify the exact controller manual, program, offsets, tool assembly, workholding, and clearance. Use the approved prove-out procedure with guarding and supervision. This animation is not a collision check or production approval.
+
+READ THE CODE. SEE THE MOTION.
+Read each block, predict the tool motion, and verify the modal state. Learn with the academy simulator and lessons, then rely on the actual machine documentation and approved shop procedures.
+
